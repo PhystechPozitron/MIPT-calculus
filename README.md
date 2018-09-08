@@ -1,4 +1,4 @@
-# MIPT-angem
+# MIPT-calculus
 
 All workshop tasks are put into `workshops` directory.
 The [main.tex](workshops/1/main.tex) file is main one. It is build with
