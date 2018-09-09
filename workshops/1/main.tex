@@ -13,16 +13,19 @@
 
 \newcommand{\studentpage}[2]{%
     \newpage\setcounter{page}{1}
+    \section*{Тест}
+        \testtasks
+
+    \newpage\setcounter{page}{1}
+    \section*{Базовые задачи}
+        \basetasks
+
+    \newpage\setcounter{page}{1}
     \begin{flushright}
         Студент: #2
     \end{flushright}
 
-    \section*{Материалы к воркшопу по матану}
-    \subsection*{Тест}
-        \testtasks
-    \subsection*{Базовые задачи}
-        \basetasks
-    \subsection*{Дополнительные задачи}
+    \section*{Дополнительные задачи}
         \restartlist{enumerate}
         \begin{enumerate}
             \input{people/#1}
@@ -32,7 +35,7 @@
 \begin{document}
 %    \studentpage{binkevich}
 %    \studentpage{bakumenko}
-%    \studentpage{balbek}
+     \studentpage{balbek}{Кирилл Балбек}
 %    \studentpage{vedernikova}
      \studentpage{golius}{Маргарита Голиус}
 %    \studentpage{grishkova}
