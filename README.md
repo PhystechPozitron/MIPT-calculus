@@ -5,8 +5,7 @@ The [main.tex](workshops/1/main.tex) file is main one. It is build with
 ```bash
 pdflatex main.tex
 ```
-
-The structure inside is pretty simple:
+The structure:
  - `obligatory.tex` defines basic tasks common for all people
  - `optional.tex` defines additional tasks which are then included optionally to certain person's file
  - `people` subdirectory contains personal files including optinal tasks drop `optional.tex`
