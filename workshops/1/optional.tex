@@ -1,37 +1,90 @@
-\def \ProveTransposeTask {%
-    \item Докажите тождества:
-    \begin{tasks}(2)
-        \task $(\alpha A)^T = \alpha A^T$
-        \task $(A + B)^T = A^T + B^T$
-        \task $(AB)^T = B^T A^T$
-        \task $(A_1 A_2 \dots A_n)^T = A_n^T \dots A_2^T A_1^T$
-    \end{tasks}
+\def \ProveLimGProg {%
+    \item Доказать, что при $0 \leq q < 1 \hookrightarrow \lim\limits_{n \to \infty} q^n = 0$.(\textit{ Указание: использовать неравенство Бернулли})
 }
 
-\def \ParamSystemTask {%
-        \item Найдите количество решений системы линейных уравнений при различных $\alpha$:
-        \[
-            \begin{cases}
-                \alpha x + 4 y = 2 + \alpha \\
-                x + \alpha y = 2
-            \end{cases}
-        \]
+\def \ProveLimAbs {%
+    \item Доказать, что если $x_n \rightarrow a$, то $|x_n| \rightarrow |a|.$
+        
 }
 
-\def \DeterminantTask {%
-        \item Вычислите детерминант выражения:
-        \[
-            A = \begin{pmatrix}1 & 2 & 1\\ -2 & 1 & 2 \\ -1 & -2 & 1 \end{pmatrix} \qquad
-            B = \begin{pmatrix}0 & 2 & 1\\  2 & 0 & 2 \\  1 &  2 & 0 \end{pmatrix}
-        \]
-        \[
-            \det(A^3-A^2 B +ABA -A B^2) =
-        \]
+\def \ProveLimUniqInf {%
+    \item Доказать, что если $\lim\limits_{n \to \infty} x_n = + \infty , $ то у $x_n$ не существует конечного предела.
+        
 }
 
-\def \ProveSimpleTasks {%
-        \item * $a$ и $b$ -- столбцы высоты $n$, $H = ab^T$. Доказать, что $\exists \lambda \in \mathbb{R}: H^2 = \lambda H$.
-        \item * В матрице $A$ порядка $n$ ровно $n$ элементов равны 1, а остальные -- 0. Чему может быть равен $\det A$?
-        \item * Докажите, что детерминант кососимметрической матрицы нечетного порядка всегда равен 0.
+\def \ProveWeierstrInf {%
+    \item Доказать, что если $x_n$ возрастает и неограничена, то у нее существует предел равный $+ \infty.$
+        
 }
+
+\def \ProveMonotE {%
+    \item Доказать, что $x_n = \Big (1 + \dfrac{1}{n} \Big )^{n + 1}$ монотонна.(\textit{Замечание: в силу теоремы Вейерштрасса это означает, что $x_n$ сходится.})
+
+        
+}
+
+\def \ProveLimInequalMinusInf {%
+    \item Пусть $ \exists N : \forall n \geq N \hookrightarrow a_n \leq b_n.$ Доказать, что если $b_n \rightarrow - \infty$, то $a_n \rightarrow - \infty$.
+        
+}
+
+\def \ProveLimInequalPlusInf {%
+    \item Пусть $ \exists N : \forall n \geq N \hookrightarrow a_n \leq b_n.$ Доказать, что если $a_n \rightarrow + \infty$, то $b_n \rightarrow + \infty$
+        
+}
+
+\def \FindLimFactor {%
+    \item Найти предел последовательности $x_n = \dfrac{n}{2^n}$ и $y_n = \dfrac{2^n}{n!}$. (\textit{Указание: использовать, что $2^n = (1 + 1)^n = \sum\limits_{k = 0}^n C_n^k $ })
+        
+}
+
+\def \ExplConv {%
+    \item Исследовать на сходимость $x_n = n +(-1)^n$.
+        
+}
+
+\def \ProveLimSqrt {%
+    \item Доказать, что если $x_n \rightarrow a,$ где $a > 0$, то $ \sqrt{x_n} \rightarrow \sqrt{a}.$
+        
+}
+
+\def \ProveConvE {%
+    \item Доказать, что последовательность $x_n = \Big (1 + \dfrac{1}{n} \Big )^n$ сходится.
+        
+}
+
+\def \FindLimitsEAndSqrt {%
+    \item Найти $\lim\limits_{n \to \infty} \Big(9 + \dfrac{1}{n} \Big)^{1/2}$ и $\lim\limits_{n \to \infty} \Big(1 + \dfrac{1}{n} \Big)^{n/2}$.
+
+        
+}
+
+\def \ProveAndFindRecur {%
+    \item Доказать, что $x_n$ сходится и найти $\lim\limits_{n \to \infty} x_n$, если $x_{n + 1} = x_n^2 + 3x_n + 1$ и $x_1 = -3/2$.(\textit{ Указание: использовать то, что если $x_n \rightarrow a$, то и $x_{n+1} \rightarrow a$})
+        
+}
+
+\def \FindExample {%
+    \item Привести пример когда:\\
+        1) $x_n < y_n \forall n \in \mathbb{N},$ но $\lim\limits_{n \to \infty} x_n = \lim\limits_{n \to \infty} y_n.$
+        2) $x_n > y_n \forall n \leq 1000,$ но $\lim\limits_{n \to \infty} x_n = \lim\limits_{n \to \infty} y_n.$
+        
+}
+
+\def \ExploreConvParamA {%
+    \item При каких $a \geq 1$ едовательность $x_n = \sqrt{an^2 + bn + 2} - n $ имеет конечный предел?
+        
+}
+
+\def \FindLimSqrtMinus {%
+    Найти $\lim\limits_{n \to \infty} (\sqrt{n^2 -1} - \sqrt{n}).
+        
+}
+
+\def \ProveMultiplicationInf  {%
+    Пусть $x_n \rightarrow x > 0$ и $y_n \rightarrow \infty$. Доказать, что $x_n \cdot y_n \rightarrow +\infty$.
+        
+}
+
+
 
