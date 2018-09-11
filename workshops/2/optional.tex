@@ -1,31 +1,23 @@
 \def \ProveLimGProg {%
-    \item Доказать, что при $0 \leq q < 1 \hookrightarrow \lim\limits_{n \to \infty} q^n = 0$.(\textit{ Указание: использовать неравенство Бернулли})
+    \item Доказать, что при $0 \leq |q| < 1 \hookrightarrow \lim\limits_{n \to \infty} q^n = 0$.(\textit{ Указание: использовать неравенство Бернулли})
 }
-
-\def \ProveLimAbs {%
-    \item Доказать, что если $x_n \rightarrow a$, то $|x_n| \rightarrow |a|.$
         
+\def \ProveSqrtN {%
+    \item Доказать, что $\lim\limits_{n \to \infty} \sqrt[n]{a} = 1$, где $a > 1$.
 }
 
 \def \ProveLimUniqInf {%
     \item Доказать, что если $\lim\limits_{n \to \infty} x_n = + \infty , $ то у $x_n$ не существует конечного предела.
-        
 }
-
-\def \ProveWeierstrInf {%
-    \item Доказать, что если $x_n$ возрастает и неограничена, то у нее существует предел равный $+ \infty.$
         
-}
 
 \def \ProveMonotE {%
     \item Доказать, что $x_n = \Big (1 + \dfrac{1}{n} \Big )^{n + 1}$ монотонна.(\textit{Замечание: в силу теоремы Вейерштрасса это означает, что $x_n$ сходится.})
-
-        
+       
 }
 
 \def \ProveLimInequalMinusInf {%
-    \item Пусть $ \exists N : \forall n \geq N \hookrightarrow a_n \leq b_n.$ Доказать, что если $b_n \rightarrow - \infty$, то $a_n \rightarrow - \infty$.
-        
+    \item Пусть $ \exists N : \forall n \geq N \hookrightarrow a_n \leq b_n.$ Доказать, что если $b_n \rightarrow - \infty$, то $a_n \rightarrow - \infty$.       
 }
 
 \def \ProveLimInequalPlusInf {%
@@ -33,58 +25,57 @@
         
 }
 
-\def \FindLimFactor {%
-    \item Найти предел последовательности $x_n = \dfrac{n}{2^n}$ и $y_n = \dfrac{2^n}{n!}$. (\textit{Указание: использовать, что $2^n = (1 + 1)^n = \sum\limits_{k = 0}^n C_n^k $ })
+\def \FindLimBinom {%
+    \item Найти предел последовательности $x_n = \dfrac{n}{2^n}$. (\textit{Указание: использовать, что $2^n = (1 + 1)^n = \sum\limits_{k = 0}^n C_n^k $ })
         
 }
 
 \def \ExplConv {%
-    \item Исследовать на сходимость $x_n = n +(-1)^n$.
-        
+    \item Исследовать на сходимость $x_n = n +(-1)^n$.        
 }
-
-\def \ProveLimSqrt {%
-    \item Доказать, что если $x_n \rightarrow a,$ где $a > 0$, то $ \sqrt{x_n} \rightarrow \sqrt{a}.$
-        
-}
-
-\def \ProveConvE {%
-    \item Доказать, что последовательность $x_n = \Big (1 + \dfrac{1}{n} \Big )^n$ сходится.
-        
-}
+           
 
 \def \FindLimitsEAndSqrt {%
     \item Найти $\lim\limits_{n \to \infty} \Big(9 + \dfrac{1}{n} \Big)^{1/2}$ и $\lim\limits_{n \to \infty} \Big(1 + \dfrac{1}{n} \Big)^{n/2}$.
-
-        
+       
 }
 
 \def \ProveAndFindRecur {%
-    \item Доказать, что $x_n$ сходится и найти $\lim\limits_{n \to \infty} x_n$, если $x_{n + 1} = x_n^2 + 3x_n + 1$ и $x_1 = -3/2$.(\textit{ Указание: использовать то, что если $x_n \rightarrow a$, то и $x_{n+1} \rightarrow a$})
+    \item Доказать, что $x_n$ сходится и найти $\lim\limits_{n \to \infty} x_n$, если $x_{n + 1} = x_n^2 + 3x_n + 1$ и $x_1 = -3/2$. (\textit{ Указание: использовать то, что если $x_n \rightarrow a$, то и $x_{n+1} \rightarrow a$})
         
 }
 
 \def \FindExample {%
-    \item Привести пример когда:\\
-        1) $x_n < y_n \forall n \in \mathbb{N},$ но $\lim\limits_{n \to \infty} x_n = \lim\limits_{n \to \infty} y_n.$
+    \item  Привести пример когда:\\
+        1) $x_n < y_n \forall n \in \mathbb{N},$ но $\lim\limits_{n \to \infty} x_n = \lim\limits_{n \to \infty} y_n.$\\
         2) $x_n > y_n \forall n \leq 1000,$ но $\lim\limits_{n \to \infty} x_n = \lim\limits_{n \to \infty} y_n.$
         
 }
 
 \def \ExploreConvParamA {%
-    \item При каких $a \geq 1$ едовательность $x_n = \sqrt{an^2 + bn + 2} - n $ имеет конечный предел?
-        
+    \item  При каких $a \geq 1$ последовательность $x_n = \sqrt{an^2 + bn + 2} - n $ имеет конечный предел?      
 }
 
 \def \FindLimSqrtMinus {%
-    Найти $\lim\limits_{n \to \infty} (\sqrt{n^2 -1} - \sqrt{n}).
-        
+    \item  Найти $\lim\limits_{n \to \infty} (\sqrt{n^2 -1} - \sqrt{n}).$        
 }
 
 \def \ProveMultiplicationInf  {%
-    Пусть $x_n \rightarrow x > 0$ и $y_n \rightarrow \infty$. Доказать, что $x_n \cdot y_n \rightarrow +\infty$.
+    \item  Пусть $x_n \rightarrow x > 0$ и $y_n \rightarrow \infty$. Доказать, что $x_n \cdot y_n \rightarrow +\infty$.
         
 }
+
+\def \Arifm {%
+    \item 1) Найти предел $x_n = \dfrac{2^n -3^n \cdot 10}{2^n + 3^n \cdot 5}$.\\ 
+    2) Показать, что предел последовательности  $x_n = \dfrac{\cos^2 n}{n^3} $ равен нулю.\\ 
+    3) Найти предел $x_n = (\dfrac{n}{1 + n})^{-n}$.
+}
+
+
+\def \ProvLimRadical {%
+    \item Доказать, что если $\lim\limits_{n \to \infty} x_n = a$ $\forall n \in \mathbb{N} x_n > 0, a> 0$, то $\lim\limits_{n \to \infty} \sqrt[3]{x_n} = \sqrt[3]{a} $.
+}
+
 
 
 
