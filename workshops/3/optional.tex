@@ -1,0 +1,58 @@
+
+\def \ProveInfZero {% Доказать, что функция минус ее предл беск мала
+        \item Пусть $\lim \limits_{n \to \infty} x_n = a \in \mathbb{R}.$ Доказать, что $x_n = a + \alpha_n$, где $\alpha_n$ бесконечно малая функция.
+        }
+\def \ProveMonotConvSubSequence {% Посл монот, а ее подпосл. сх-ся, док-ть что послед сх-ся
+        \item Пусть $x_n$ монотонна, $x_{n_k} \rightarrow a \in \mathbb{R}$ -- ее сходящаяся подпоследовательность. Доказать, что $x_n \rightarrow a$.
+        }
+\def \ProveConvRecur {% П-ть задана рекурентно, д-ть сходимость
+        \item Доказать, что последовательность сходится если:
+        $\begin{cases}
+            x_{n+1} = x_n + \dfrac{(-1)^n}{n}\\
+            x_1 = 1     
+        \end{cases}$\\
+        (\textit{Указание: Последовательность $y_n = \sum \limits_{k = 0}^n \dfrac{1}{k!}$})
+        }
+\def \ProveIfFundThenSubsequenceFund {% П-ть фунд значит любая ее под-ть фунд
+        \item Доказать, что у фундаментальной последовательности любая ее подпоследовательность фундаментальна.
+        
+        }
+\def \ProveConvWithKoshi {% Задана модуль разн. n+1 и n членов послед., д-ть что послед. сх-ся
+        \item Последовательность $x_n$ такова, что $|x_{n+1} - x_n| \leq C\cdot \alpha^n , \forall n \in \mathbb{N}$, где $\alpha \in (0,1)$. Доказать, что $x_n$ сходится.(\textit{Указание: использовать формулу для суммы геометрической прогрессии.}) 
+        }
+\def \ProveRadicalBinom {% Корень n-ой степени из n
+        \item Доказать, что $\lim \limits_{n \to \infty} \sqrt[n]{n} = 1$. (\textit{Указание: использовать формулу бинома Ньютона.})
+        }
+\def \FindAllSubLimits {% Найти все чп п-тей
+        \item Найти все частичные пределы последовательностей:\\
+        $1) x_n = n \cos\dfrac{\pi n}{n}$
+        $2) y_n = n^{\sin \dfrac{\pi n}{2}}$
+        }
+\def \FindExampleContableSubsequence {% Привести пример п-ти, у кот. мн-во ч.п. счетно
+        \item Привести пример последловательности, у которой множество всех ее частичных пределов счетно.
+        }
+\def \FindExamleSubsequence {% Привести пример п-ти, у которой м-во ч.п. 0, +-1,2
+        \item Привести пример последловательности со следующим множеством частичных пределов $A = (0, \pm 1, \pm 2 )$.
+        }
+\def \ProveFundPartition {% Док-ть, что если 2-е п-ти фунд. и одна отделена от нуля, то их частное фунд.
+        \item Пусть последовательности $x_n$ и $y_n$ фундаментальны. Доказать, что если $y_n \geq C > 0 , \forall n \in \mathbb{N}, $ то $\dfrac{x_n}{y_n}$ фундаментальна.
+        }
+\def \ProveFundSequence {% Док-ть фунд п-ти
+        \item Доказать, что $x_n = \dfrac{\cos \pi n}{n}$ фундаментальна.
+        }
+\def \ProveFundDef {% Д-ть фунд п-ти тогда и только тогда когда вып. усл-е
+        \item Доказать, что $x_n$ фундаментальна $\Leftrightarrow$ \\
+        $\forall \varepsilon \exists N : \forall n \geq N \hookrightarrow |x_n - x_N| < \varepsilon $
+        }
+\def \ResearchOnConvWithKoshiA {% Исследовать на сх-ть при помощи кр. Коши
+        \item Исследовать на сходимость с помощью критерия Коши
+        $ x_n = \dfrac{n \cos \pi n - 1}{2n}$
+        }
+\def \ResearchOnConvWithKoshiB {% Исследовать на сх-ть при помощи кр. Коши
+        \item Исследовать на сходимость с помощью критерия Коши
+        $ y_n = (1 + \dfrac{(-1)^n}{n})^n$
+        }
+\def \ProveSumConv {% П-ть равная сумме x_k сх-ся, д-ть что x_k сх-ся
+        \item Пусть $y_n = \sum \limits_{k = 1}^{n} x_k$ сходится. Доказать, что $x_k \rightarrow 0$.
+        }
+        
