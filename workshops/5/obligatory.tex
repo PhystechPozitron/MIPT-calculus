@@ -1,0 +1,48 @@
+\def \testtasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+     \item Напишите определение непрерывности функции в точке.
+    \item Напишите определение непрерывности функции на полуинтервале $[a,b),$ где $ a, b \in \mathbb{R}$. 
+    \item Для функции $f(x) = sign(x)$ укажите точку разрыва и ее классификацию.
+    \item Сформулируйте теорему о непрерывности композиции.
+    \item Верно ли, что если $f(x) \underset{x \rightarrow x_0}{\longrightarrow} y_0$, a $g(y) \underset{y \rightarrow y_0}{\longrightarrow} A$, то $g(f(x)) \underset{x \rightarrow x_0}{\longrightarrow} A$? Если нет, то привести контрпример. 
+    \item Сформулируйте теорему о замене переменной под знаком предела.
+    \item Пусть $f(x)$ непрерывна в $x_0$. Верно ли, что $|f(x)|$ непрерывна в $x_0$? Ответ обосновать.
+    \item Сформулируйте теорему Вейерштрасса.
+    \item Сформулируйте теорему Больцано-Коши.
+    \item В процессе подготовки к воркшопу по матану, между Владом и Артемом возник спор: может ли непрерывная на отрезке $[0,1]$ функция иметь множество значений $(0,1)$? Разрешите спор.  
+    \end{enumerate}
+}
+
+
+\def \basetasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+
+    \item Исследуйте функцию $f(x)$ на непрерывность в точке $x_0$:\\
+    $1)\; f(x) = \sqrt[3]{x}, \; x_0 \in [0, +\infty) $ \; $2)\; f(x) = \dfrac{1}{x}, \; x_0 \in (0, +\infty)$
+    \item Найти все точки разрыва функции и выяснить их тип:\\
+     $1)\; f(x) = \begin{cases}
+    \dfrac{A}{r^6} - \dfrac{B}{r^{12}}, \; r > 0\\
+    0, \; r = 0 \\
+    \end{cases}$
+    $2)\; f(x) = \begin{cases}
+    x^2, \; x \in [0,1)\\
+    2\sqrt{x} \; x \in [1, +\infty) \\
+    \end{cases}$
+    $3)\; f(x) = \begin{cases}
+    \dfrac{1}{x}\cdot\sin\dfrac{1}{x}, \; x \neq 0\\
+    0, \; x = 0 \\
+    \end{cases}$
+    \item Пусть $f(x)$ непрерывна в точке $x_0 \in \mathbb{R}$. Доказать, что:\\
+    $1)\; f(|x - x_0|)$ непрерывна в $x_0$ ; $2)\; f(f(\sqrt[3]{x - x_0}))$ непрерывна в $x_0$.
+    \item Найти пределы:\\
+    $1)\; \lim\limits_{x \rightarrow 1} \dfrac{\sin7\pi x}{\sin 2 \pi x}$ \; $2)\; \lim\limits_{x \rightarrow 1} x^{\frac{1}{x - 1}}$ \; $3)\; \lim\limits_{x \rightarrow 0} \dfrac{\arcsin x}{x}$
+    \textit{ (Указание: $\lim\limits_{x \rightarrow 0} \dfrac{\sin x}{x} = 1$, $ \lim\limits_{x \rightarrow 0} (1 + x)^{\frac{1}{x}} = e$.) }
+    \item Пусть $f(x)$ непрерывна в $x_0$ и $f(x_0) > 0$. Доказать, что $\exists \delta > 0 : \forall x \in U_{\delta}(x_0) \hookrightarrow f(x) > 0$.
+    \item Пусть $f(x)$ непрерывна на $[a, +\infty)$ и $\exists \lim\limits_{x \rightarrow +\infty} f(x) = A \in \mathbb{R}$. Доказать, что $f(x)$ ограничена на $[a, +\infty)$.
+    \item Доказать, что многочлен нечетной степени всегда имеет хотя бы один действительный корень.
+
+    \end{enumerate}
+}
+
