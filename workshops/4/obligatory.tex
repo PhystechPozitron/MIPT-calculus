@@ -1,0 +1,58 @@
+\def \testtasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+        \item Напишите определение числовой функции.
+    \item Что называется композицией функций $f : X \rightarrow f(X)$ и $g : f(X) \rightarrow \mathbb{R}$?
+    \item Является ли $f(x) = \sin x$ монотонной на $X = [0, \pi]$?
+    \item Как определяется проколотая $\delta$-окрестность точки $x_0 \in \mathbb{R}$? 
+    \item Сформулируйте определение того, что $\lim \limits_{x \to x_0} f(x) = A$, где $f : X \rightarrow \mathbb{R}, \; x_0 , A \in \mathbb{R}$ по Коши.
+    \item Сформулируйте определение того, что $\lim \limits_{x \to x_0} f(x) = A$, где $f : X \rightarrow \mathbb{R}, \; x_0 , A \in \mathbb{R}$ по Гейне. 
+    \item Может ли функция иметь в $x_0 \in \mathbb{R}$ предел по Коши, но не иметь предела по Гейне?
+    \item Пусть $x_0 \in \mathbb{R}$, $f(x)$ определена в $\stackrel{o}{U}_{\delta_0}(x_0 + 0)$. Напишите определение предела $f(x)$ в точке $x_0$ справа. 
+    \item Пусть $f(x) = 100 x^2$, $g(x) = x^2$. Верно ли, что \\
+    $\dfrac{\lim \limits_{x \to 0} f(x)}{\lim \limits_{x \to 0} g(x)} = \lim \limits_{x \to 0} \dfrac{f(x)}{g(x)}$? 
+    \item Сформулируйте критерий Коши для функций.  
+    \end{enumerate}
+}
+
+
+\def \basetasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+
+        \item 1) Найти все частичные пределы последовательности $
+    x_n $ = $ \begin{cases}
+    \sin\frac{\pi n}{2}, n = 2k \\
+    \cos\frac{\pi n}{2}, n = 2k + 1\\
+    \end{cases}
+    $.\\
+    2) Используя критерий Коши исследовать на сходимость $x_n = n \cdot \cos^2 \pi n$.
+    \item Пусть $f(x) = \cos x$, $g(y) = y^2 + 3y^3$. Составить композиции:
+    $1)\; z(x) = g(f(x))$; $2) \; z(y) = f(g(y))$.
+    \item Пусть $f(x) = \frac{\cos x}{x}$, $X_1 = (0, \frac{\pi}{2})$, $X_2 = (\frac{\pi}{2}, 2\pi)$. Исследовать $f(x)$ на ограниченность и монотонность на $X_1$ и $X_2$.\\
+    (\textit{Указание: Строго обосновывать не нужно, достаточно дать правильный ответ и пояснить его.})
+    \item Пусть $f(x) = \begin{cases}
+    2x, x < 1 \\
+    \dfrac{2}{x} , x \geq 1\\
+    \end{cases} 
+    $, $x_0 = 1$. \\
+    $1)$ Укажите $\delta_0 > 0$ такую, чтобы $f(x)$ была определена в $\stackrel{o}{U}_{\delta_0}(x_0)$. \\
+    $2)$ Пусть $\varepsilon = 0,5$. Укажите $\delta \in (0,\delta_0]:\; \forall x \in \stackrel{o}{U}_{\delta}(x_0) \hookrightarrow |2 - f(x)| < \varepsilon$.
+    \item Пусть $f(x) = \sin x$, $g(x) = \begin{cases}
+    \sin x,\; x \neq \pi/2 \\
+    0 ,\; x = \pi/2 \\
+    \end{cases} 
+    $. Доказать, что $\lim \limits_{x \to \pi/2} f(x) = \lim \limits_{x \to \pi/2} g(x) = 1$.
+    \item Пусть $f(x) = \dfrac{x^2}{x + 1}$. Доказать, что: 
+    $1) \lim \limits_{x \to 0} f(x) = 0 $; 
+    $2) \lim \limits_{x \to +\infty} f(x) = +\infty $,
+    используя определение предела по Коши.
+    \item Пусть $f(x) = \begin{cases}
+    0, \; x < 0\\
+    1, \; x \geq 0 \\
+    \end{cases}$, $g(x) = sign(x)\cdot \sin\dfrac{1}{x^2}$. Доказать, что $f$ и $g$ не имеют предела в нуле, используя определение предела по Гейне.
+    \item Пусть $f(x) \rightarrow A \in \mathbb{R}$ и $g(x) \rightarrow B \in \mathbb{R}$ при $x \rightarrow x_0 \in \mathbb{R}$. Пусть также $\exists \stackrel{o}{U}_{\delta}(x_0): \; f(x) \leq g(x) $ в $\stackrel{o}{U}_{\delta}(x_0)$. Доказать, что $A \leq B.$
+
+    \end{enumerate}
+}
+
