@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{multirow}
+\usepackage[left=1cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsfonts,longtable, amssymb, amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+%\urlstyle{same}
+\usepackage{pdfpages}
+%\usepackage{pscyr}
+\usepackage[normalem]{ulem}  % для зачекивания текста
+\usepackage{ulem}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .svg}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO]{} 
+\fancyhead[CO]{}
+\fancyhead[RO]{}
+
+\usepackage{graphicx,url}
+
+\usepackage[russian]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+\usepackage{verbatim}
+\begin{document}
+
+\section*{Ответы, день 3}
+
+\begin{enumerate}
+     	\item 
+     	\begin{enumerate}
+     		\item[1)] $y^{(n)} (x) = (x^2 + x) \cdot a^x \cdot \ln^n a + n \cdot (2x + 1) \cdot a^x \cdot \ln^{n - 1} a + n(n - 1) \cdot a^x \cdot \ln^{n - 2} a$, где $a = 4^5 \cdot 3^2$;
+     		\item[2)] $y^{(n)} (x) = -(2x + 3)^2 \cdot \dfrac{3 \cdot 2^{n - 1} (n - 1)!}{(3 - 2x)^n \ln{3}} - n \cdot 4(2x + 3) \cdot \dfrac{3 \cdot 2^{n - 2} (n - 2)!}{(3 - 2x)^{n-1} \ln{3}} - n(n - 1) \cdot 4 \cdot \dfrac{3 \cdot 2^{n - 3} (n - 3)!}{(3 - 2x)^{n-2} \ln{3}}$;
+     		\item[3)] $y^{(n)} (x) = x^2 \cdot (5x + 7)^{-2/3 - n} \cdot 5^n \cdot n! \cdot C_{-2/3}^n + n \cdot 2x \cdot (5x + 7)^{1/3 - n} \cdot 5^{n-1} \cdot (n - 1)! \cdot C_{-2/3}^{n - 1} + \\ + n(n - 1) \cdot (5x + 7)^{4/3 - n} \cdot 5^{n-2} \cdot (n - 2)! \cdot C_{-2/3}^{n - 2}$;
+     		\item[4)] $y^{(n)} (x) = \dfrac{x^2}{2} \cdot 4^n \cdot \cos \bigg( 4x + \dfrac{\pi n}{2} \bigg) + n \cdot x \cdot 4^{n-1} \cdot \cos \bigg( 4x + \dfrac{\pi (n - 1)}{2} \bigg) + \dfrac{n(n - 1)}{2} \cdot 4^{n - 2} \cos \bigg( 4x + \dfrac{\pi (n - 2)}{2} \bigg) $.
+     	\end{enumerate} 
+     	     	
+\end{enumerate}
+
+\textit{ Замечание.} При решении задачи, аналогичной \textit{пункту 3}, нужно будет написать в ответе определение величины $C_{\alpha} ^n$. 
+
+\end{document}

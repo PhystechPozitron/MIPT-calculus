@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{multirow}
+\usepackage[left=1cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsfonts,longtable, amssymb, amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+%\urlstyle{same}
+\usepackage{pdfpages}
+%\usepackage{pscyr}
+\usepackage[normalem]{ulem}  % для зачекивания текста
+\usepackage{ulem}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .svg}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO]{} 
+\fancyhead[CO]{}
+\fancyhead[RO]{}
+
+\usepackage{graphicx,url}
+
+\usepackage[russian]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+\usepackage{verbatim}
+\begin{document}
+
+\section*{Подготовка к практике, день 2}
+
+\begin{enumerate}
+     	\item Разложите указанные функции по формуле Тейлора в окрестности указанной точки:
+     	\begin{enumerate}
+     		\item[1)] $f(x) = (1 - x^2) \ln{(x + \sqrt{1 + x^2})}$, $x_0 = 0$, до $o(x^{2n})$ \textit{(2008 - 2009, вариант 1)}; 
+     		\item[2)] $f(x) = (x^2 - 2x + 4) \ln{\sqrt[7]{x^2 - 2x + 2}}$, $x_0 = 1$, до $o((x - x_0)^{2n + 1})$ \textit{(2014 - 2015, вариант 1)};   
+     		\item[3)] $f(x) = (x^2 + x + \frac{5}{4}) \cos{(2x+1)}$, $x_0 = -1/2$, до $o((x - x_0)^{2n + 1})$ \textit{(2000 - 2001, вариант 1)}.
+     	\end{enumerate}
+     	\textit{Указание.} Для разложения функции $\ln{(x + \sqrt{1 + x^2})}$ из \textit{пункта 1} используйте теорему о дифференцировании формулы Тейлора. В \textit{пункте 2}, прежде чем приступать к разложению, нужно упростить исходную функцию.
+     	
+     	\item Вычислите пределы     	
+     	\begin{enumerate}
+     		\item[1)] $ \lim\limits_{x \to 0} \dfrac{\arctg \dfrac{2x}{1 + \cos{x}} - \dfrac{x}{\sqrt{1 + x^2}}}{ x \ln{(e^x - x)}}$ \textit{(1997 - 1998, вариант 1)}; 
+     		\item[2)] $ \lim\limits_{x \to 0} \dfrac{\ln{(x + \sqrt{1 + x^2})} - x e^{x^2}}{ \sin{\dfrac{2x}{2 + x}} - \ln{(1 + x)}}$ \textit{(1997 - 1998, вариант 2)};
+     		\item[3)] $ \lim\limits_{x \to 0} \dfrac{\ln{\dfrac{1 - \sin{x}}{\cos{x}}} + \frac{1}{2} \arcsin{(2 \tg{x})}}{ e^{x \cos{x}} - \dfrac{x}{1 - x} - \cos{x}}$ \textit{(2003 - 2004, вариант 1)}.
+     	\end{enumerate} 
+     	
+     	\item Вычислите пределы
+     	\begin{enumerate}
+     		\item[1)] $ \lim\limits_{x \to 0} \bigg( \dfrac{e^{x^2} - (1+x)^x}{e^{\sh{x}} - e^{\arctg{x}} } \bigg)^{\frac{1}{\sin{x}}}$ \textit{(2004 - 2005, вариант 1)}; 
+     		\item[2)] $ \lim\limits_{x \to 0} \big( \sqrt{1 + \th{\sin{x}}} + e^{-\frac{x}{2}} - \sqrt{1 - x^3} \big)^{\frac{1}{\sin{(2x)} - \th{(2x)}}}$ \textit{(2014 - 2015, вариант 1)};
+     		\item[3)] $ \lim\limits_{x \to 0} \bigg( \dfrac{x \sin{(\sqrt[3]{1 - 3x} - \sqrt[3]{1 + 3x})}}{\ln{\cos{(2x)}}} \bigg)^{\frac{16x}{\th{(2x)} - \tg{(2x)}}}$ \textit{(2009 - 2010, вариант 1)}.
+     	\end{enumerate} 
+     	     	
+\end{enumerate}
+
+\textit{Общий комментарий.} Обязательно повторите все основные разложения по формуле Тейлора!
+\end{document}

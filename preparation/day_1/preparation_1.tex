@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{multirow}
+\usepackage[left=1cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsfonts,longtable, amssymb, amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+%\urlstyle{same}
+\usepackage{pdfpages}
+%\usepackage{pscyr}
+\usepackage[normalem]{ulem}  % для зачекивания текста
+\usepackage{ulem}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .svg}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO]{} 
+\fancyhead[CO]{}
+\fancyhead[RO]{}
+
+\usepackage{graphicx,url}
+
+\usepackage[russian]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+\usepackage{verbatim}
+\begin{document}
+
+\section*{Подготовка к практике, день 1}
+
+\begin{enumerate}
+     	\item Постройте графики рациональных функций:
+     	\begin{enumerate}
+     		\item[1)] $y = \dfrac{x^3}{(x - 1)^2}$ \textit{(2014 - 2015, вариант 3)};
+     		\item[2)] $y = \dfrac{x^3}{(x^2 - 4)}$ \textit{(2005 - 2006, вариант 2)};
+     		\item[3)] $y = \dfrac{x^2 \cdot (x - 4)}{2 (x + 2)^2}$ \textit{(2009 - 2010, вариант 1)}.
+     	\end{enumerate}
+     	
+     	\item Постройте графики иррациональных функций:
+     	\begin{enumerate}
+     		\item[1)] $y = |x + 2| \cdot \sqrt[3]{1 + \dfrac{2}{x}} $ \textit{(2014 - 2015, вариант 1)};
+     		\item[2)] $y = x - \sqrt[3]{(x - 2)^2 \cdot (x - 1)}$ \textit{(2005 - 2006, вариант 2)}.
+     	\end{enumerate} 
+     	
+     	\item \textit{(2014 - 2015, вариант 1)} Найдите наименьшую кривизну кривой 
+     		\[ \begin{cases}
+     			x(t) = 3 \cos{t} - \sin{t}; \\
+     			y(t) = 3 \cos{t} + \sin{t}.
+     		\end{cases} \]
+     	
+     	\item \textit{(1997 - 1998, вариант 1)} Найдите кривизну кривой в точке $t = 0$:
+     		\[ \begin{cases}
+     			x(t) = t \cos{t} + e^t; \\
+     			y(t) = e^{-t^2} + \sin{t}.
+     		\end{cases} \]
+     	
+     	\item \textit{(2002 - 2003, вариант 1)} Найдите кривизну и радиус кривизны кривой, заданной уравнением $x^4 + y^4 - 2xy = 0$, в точке $(1; 1)$. \\
+     	\textit{Подсказка.} Выберите переменную $x$ в качестве параметра на кривой и дважды продифференцируйте заданное уравнение по выбранному параметру.
+\end{enumerate}
+
+\end{document}

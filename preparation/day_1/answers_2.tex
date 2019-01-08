@@ -1,0 +1,63 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{multirow}
+\usepackage[left=1cm,right=1cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsfonts,longtable, amssymb, amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+%\urlstyle{same}
+\usepackage{pdfpages}
+%\usepackage{pscyr}
+\usepackage[normalem]{ulem}  % для зачекивания текста
+\usepackage{ulem}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .svg}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO]{} 
+\fancyhead[CO]{}
+\fancyhead[RO]{}
+
+\usepackage{graphicx,url}
+
+\usepackage[russian]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+\usepackage{verbatim}
+
+\begin{document}
+
+\section*{Ответы, день 2}
+
+\begin{enumerate}
+     	\item 
+     	\begin{enumerate}
+     		\item[1)] $f(x) = x + \sum\limits_{k = 1}^{n - 1} \bigg( \dfrac{C_{-1/2}^k}{2k + 1} - \dfrac{C_{-1/2}^{k - 1}}{2k - 1} \bigg) x^{2k + 1} + o(x^{2n})$;
+     		\item[2)] $f(x) = \dfrac{3}{7} (x - 1)^2 + \sum\limits_{k = 2}^n \dfrac{(-1)^k}{7} \bigg( \dfrac{1}{k - 1} - \dfrac{3}{k} \bigg) (x - 1)^{2k} + o[ (x - 1)^{2n+1} ]$;
+     		\item[3)] $ f(x) = 1 + \sum\limits_{k = 1}^n \bigg( \dfrac{(-4)^k}{(2k)!} + \dfrac{(-4)^{k - 1}}{(2k - 2)!} \bigg) (x + \dfrac{1}{2})^{2k} + o[ (x + \dfrac{1}{2})^{2n + 1} ] $.
+     	\end{enumerate}
+     	
+     	\item 
+     	\begin{enumerate}
+     		\item[1)] $\dfrac{5}{6}$;
+     		\item[2)] $\dfrac{14}{3}$;
+     		\item[3)] $-\dfrac{5}{8}$.
+     	\end{enumerate}
+     	
+     	\item 
+     	\begin{enumerate}
+     		\item[1)] $e^{-5/3}$;
+     		\item[2)] $e^{7/32}$;
+     		\item[3)] $e^{-1}$.
+     	\end{enumerate}
+\end{enumerate}
+
+\end{document}
